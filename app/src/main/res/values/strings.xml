@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">stilloa2_drive_to_MSU</string>
+    <string name="welcome">Welcome to Drive to MSU!</string>
+    <string name="description">Clicking on the button will open Google Maps and generate direction on how to get to MSU from your current location.</string>
+    <string name="drive_to_msu">Drive to MSU</string>
+    <string name="logo">logo</string>
+    <string name="avoid_highways">Avoid Highways</string>
+    <string name="avoid_tolls">Avoid Tolls</string>
+    <string name="avoid_ferries">Avoid Ferries</string>
+</resources>

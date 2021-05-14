@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red_hawk"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/description"
+            android:textSize="26sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+
+        <CheckBox
+            android:id="@+id/h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avoid_highways"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_gravity="start" />
+
+        <CheckBox
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avoid_tolls"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_gravity="start" />
+
+        <CheckBox
+            android:id="@+id/f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avoid_ferries"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_gravity="start" />
+
+        <Button
+            android:id="@+id/drive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/drive_to_msu"
+            android:onClick="onClick"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+    </LinearLayout>
+</ScrollView>
